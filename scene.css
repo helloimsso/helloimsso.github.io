@@ -1,0 +1,36 @@
+body{	color: #F5B7B1  ;
+		background-color:rgb(148,100,83,0.5);
+		padding:50px;
+		/*background-image: linear-gradient(to bottom, #E59866, #BA4A00);*/
+  /*background-attachment:fixed;*/
+  /*background-repeat: no-repeat;*/
+
+}
+	
+
+h1{	font-family:Georgia:;
+	font-size: 25px;
+	color:rgb(193,48,33);
+  
+}
+
+#lobby{
+	font-size: 60px;
+	/*color: #C0392B  ;*/
+  -webkit-text-fill-color:#C0392B;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: #5B2C6F;
+  text-shadow:
+       3px 3px 0 #5B2C6F,
+     -1px -1px 0 #5B2C6F,  
+      1px -1px 0 #5B2C6F,
+      -1px 1px 0 #5B2C6F,
+       1px 1px 0 #5B2C6F;
+       transform: skewY(60deg);
+}
+
+h2{font-size: 18px;
+	text-align: right;
+	color: #5D6D7E;
+
+}
