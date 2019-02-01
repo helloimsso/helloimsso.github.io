@@ -26,7 +26,7 @@ h1{	font-family:Georgia:;
       1px -1px 0 #5B2C6F,
       -1px 1px 0 #5B2C6F,
        1px 1px 0 #5B2C6F;
-       transform: skewY(60deg);
+       transform: skewY(10deg);
 }
 
 h2{font-size: 18px;

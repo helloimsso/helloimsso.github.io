@@ -1,14 +1,15 @@
-body{text-align: center;
+body{text-align: left;
 	/*font-weight: 350;*/
 	font-family:'Merriweather Sans', serif;
 	font-style:italic;
 	font-weight:400;
-	font-size: 18px;
+	font-size: 16px;
 	font-style: italic;
 	/*line-height: 20px;*/
 	text-transform: uppercase;
 	color: #F5B7B1  ;
 	background-color: #E5E7E9 ;
+	padding:30px;
 
 }
 p{text-align: right;
