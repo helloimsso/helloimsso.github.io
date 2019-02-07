@@ -1,0 +1,51 @@
+body{
+	background: #222831;
+	padding:30px;
+	color:salmon;
+	/*overflow: hidden;*/
+	-webkit-font-smoothing: antialiased;
+   
+}
+/*#222831*/
+p{position: relative;
+    width: 700px;
+    height: 20px;
+    right:-400px;
+  	margin-bottom: 1em;
+    margin-top: 1.9em;
+    border-left: 4px solid var(--yellow3);
+    padding-left: .8em;
+    text-align: justify;
+}
+
+
+#vid{ 
+    margin-right: 100px;
+    margin-top: -5px;
+  }
+
+h1{
+
+}
+
+/*#hotel{position: relative;
+*/   /*margin-right: 62px;*/
+    width: 600px;
+    height: 300px;
+    left:650px;
+
+}
+
+#ppl{position: relative;
+    width: 700px;
+    height: 300px;
+    right:-20px;
+
+}
+
+/*#hotel img {*/
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
