@@ -1,9 +1,9 @@
 body{text-align: left;
 	/*font-weight: 350;*/
-	font-family:'Merriweather Sans', serif;
+	font-family: 'Finger Paint', cursive;
 	font-style:italic;
 	font-weight:400;
-	font-size: 15px;
+	font-size: 17px;
 	font-style: italic;
 	/*line-height: 20px;*/
 	text-transform: uppercase;
@@ -14,7 +14,7 @@ body{text-align: left;
 }
 p{text-align: right;
 	/*font-weight: 350;*/
-	font-family:'Merriweather Sans', serif;
+	font-family: 'Finger Paint', cursive;
 	font-style:italic;
 	font-weight:400;
 	font-size: 6vw;
@@ -26,10 +26,10 @@ p{text-align: right;
 
 h3{text-align: left;
 	/*font-weight: 350;*/
-	font-family:'Merriweather Sans', serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-style:italic;
 	font-weight:400;
-	font-size: 16px;
+	font-size: 15px;
 	font-style: italic;
 	/*line-height: 20px;*/
 	text-transform: uppercase;
