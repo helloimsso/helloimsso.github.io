@@ -1,0 +1,37 @@
+body{
+	background:black;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	padding:30px;
+
+}
+
+h3{font-family: 'Ubuntu', sans-serif;
+	font-size: 27px;
+	font-weight:700;
+
+
+}
+
+ul.a {
+  list-style-type: square;
+}
+
+.pat{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	font-weight:500;
+	line-height: 30px;
+}
+
+ol.b{
+
+}
+
+.recipe{font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	font-weight:500;
+	line-height: 30px;
+
+}
