@@ -2,7 +2,6 @@ body{
     /*color: #F5B7B1  ;*/
 		/*background-color:#F5B041;*/
 		padding:50px;
-		background-image: linear-gradient(to bottom, #F5B041   67%, #AEB6BF 33% );
   /*background-attachment:fixed;67% 33*/
   /*background-repeat: no-repeat;*/
 margin:0px;
@@ -52,14 +51,6 @@ h1{	font-family: 'Noticia Text', serif;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-#ink:hover {
-  -ms-transform: scale(0.5); /* IE 9 */
-  -webkit-transform: scale(.5); /* Safari 3-8 */
-  transform: scale(1.05); 
-}
-  
-  
 
 
 #lobby{
@@ -263,7 +254,7 @@ span.test3 {
 p.test {
   	writing-mode: vertical-rl;
   	font-family: 'Noticia Text', serif;
-	font-size: 21px;
+	font-size: 16px;
 	color: #28B463;
 	position: relative;
   	top: -70px;
@@ -274,7 +265,7 @@ p.test {
 p.test2 {
   	writing-mode: vertical-rl;
   	font-family: 'Noticia Text', serif;
-	font-size: 21px;
+	font-size: 16px;
 	color: #28B463;
 	position: relative;
   	top: -150px;
