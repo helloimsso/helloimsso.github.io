@@ -1,5 +1,5 @@
 body{
-	background:white;
+	background:#D0ECE7  ;
 	color:black;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 17px;
@@ -16,11 +16,11 @@ h3{font-family: 'Ubuntu', sans-serif;
 }
 
 #ink{
--webkit-text-decoration: black underline;
-  text-decoration: black underline;
+-webkit-text-decoration: #AED6F1 underline;
+  text-decoration: #AED6F1 underline;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
-  color: black;
+  color: #AED6F1;
   font-family: 'Bowlby One SC', cursive;
   font-size: 70px;
   font-weight:700;
@@ -40,10 +40,12 @@ h3{font-family: 'Ubuntu', sans-serif;
   display:inline-block;
   left:10px;
   position:relative;
+  color:#D7BDE2   ;
 }
 
 ul.a {
   list-style-type: square;
+  color:#D7BDE2;  
 }
 
 
@@ -52,10 +54,12 @@ ul.a {
 	font-size: 23px;
 	font-weight:500;
 	line-height: 30px;
+  color:#F7DC6F  ;
 }
 
 ol.a{
   position: relative;
+ 
 }
 
 ol.b{
@@ -68,6 +72,7 @@ ol.b{
   text-align:left;
   position: relative;
   width: 700px;
+  color:#D7BDE2  ;
   
 }
 
@@ -85,6 +90,7 @@ ol.b{
   font-family: 'Ubuntu', sans-serif;
 	font-size: 23px;
 	font-weight:500;
+  color:#F7DC6F  ;
 	/*line-height: 30px;*/
 
 }
@@ -98,7 +104,7 @@ ol li {
 }
 ol li::before {
   content: counter(my-awesome-counter) ". ";
-  color: black;
+  color: #AED6F1;
   font-family: 'Bowlby One SC', cursive;
   font-weight: bold;
 }
