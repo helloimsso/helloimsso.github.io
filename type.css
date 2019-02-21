@@ -8,11 +8,11 @@
 }
 
 #lowercase-d{
-  background-color: white;
+  background-color: black;
   border-radius: 250px 50px 50px 250px;
   -moz-border-radius: 250px 50px 50px 250px;
   -webkit-border-radius: 250px 50px 50px 250px;
-  border: 40px solid #000000;
+  border: 40px solid black;
   width:250px;
   height:220px;
   position:absolute;
@@ -21,13 +21,13 @@
 } 
  
 #rectangle {
-  width: 40px;
-  height: 350px;
+  width: 80px;
+  height: 505px;
   background: black;
   position:absolute;
-  border-radius:20px;
+  /*border-radius:20px;*/
   top:25px;
-  left:370px;
+  left:330px;
 }
 
 
