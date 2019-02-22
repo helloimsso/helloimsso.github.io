@@ -36,7 +36,7 @@ h3{font-family: 'Ubuntu', sans-serif;
 .des{
   font-family: 'Open Sans', sans-serif;
 	font-size: 13.5px;
-  text-align: left;
+  text-align: cneter;
   display:inline-block;
   left:10px;
   position:relative;
@@ -79,6 +79,15 @@ ol.b{
 .left {
   position: relative; 
   float: left;
+}
+
+.korean{
+  position: relative; 
+  float: left;
+  font-size:50px;
+  position:relative;
+  bottom:-500px;
+  left:-300px;
 }
 
 .right {
