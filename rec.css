@@ -1,0 +1,403 @@
+.right {
+  position: relative;
+  float: right;
+}
+
+.recipe{
+  font-family: 'Ubuntu', sans-serif;
+	font-size: 23px;
+	font-weight:500;
+	/*line-height: 30px;*/
+
+}
+
+
+
+/* Labels for checked inputs */
+input:checked + label {
+  color: red;
+}
+
+/* Radio element, when checked */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Checkbox element, when checked */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Option elements, when selected */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+
+
+html {
+    box-sizing: border-box;
+  background: #f2f2f2;
+  padding: 20px 50px
+}
+
+/* Inherit box-sizing to make it easier to change the property
+ * for components that leverage other behavior.*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*style form to limit width and highlight the long label*/
+form {
+    margin: 1rem auto;
+    max-width: 750px;
+}
+
+/*style wrapper to give some space*/
+.wrapper {
+      position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*style label to give some more space*/
+.wrapper label {
+    display: block;
+    padding: 12px 0 12px 48px;
+}
+
+/*style and hide original checkbox*/
+.wrapper input {
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+/*position new box*/
+.wrapper input + label::before {
+    border: 2px solid;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+/*create check symbol with pseudo element*/
+.wrapper input + label::after {
+    content: "";
+    border: 4px solid;
+    border-left: 0;
+    border-top: 0;
+    height: 20px;
+    left: 14px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(45deg);
+    transition: opacity 0.2s ease-in-out;
+    width: 12px;
+}
+
+/*reveal check for 'on' state*/
+.wrapper input:checked + label::after {
+    opacity: 1;
+}
+
+/*focus styles—commented out for the tutorial, but you’ll need to add them for proper use
+.wrapper input:focus + label::before {
+    box-shadow: 0 0 0 3px #ffbf47;  
+  outline: 3px solid transparent;
+}*/
+
+Resources
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  color: #435757;
+  background: radial-gradient(#fff, #dac4cd);
+  font: 1.4em/1 'Noto Sans', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+input {
+  position: absolute;
+  left: -9999px;
+}
+
+label {
+  display: block;
+  position: relative;
+  margin: 20px;
+  padding: 15px 30px 15px 62px;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #6a8494;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+}
+
+label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  width: 32px;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  transition: background-color .2s;
+}
+
+label:first-of-type {
+  transform: translateX(-40px);
+}
+
+label:last-of-type {
+  transform: translateX(40px);
+}
+
+label:hover, input:focus + label {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+}
+
+input:checked + label {
+  background-color: #ab576c;
+}
+
+input:checked + label::before {
+  background-color: #fff;
+}
+
+Resources
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 20px;
+  color: #435757;
+  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+  font: 500 1.2em/1.2 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  border-top: 5px solid #435757;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  user-select: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  counter-reset: done-items undone-items;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #435757;
+}
+
+h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.done::after {
+  content: ' (' counter(done-items) ')';
+}
+
+.undone {
+  order: 3;
+}
+
+.undone::after {
+  content: ' (' counter(undone-items) ')';
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 45px;
+  border-top: 1px dashed #fff;
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label::before {
+  content: '\f10c'; /* circle outline */
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: 1.5em 'FontAwesome';
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input:checked + label {
+  order: 2;
+  animation: done .5s;
+}
+
+input:checked + label::before {
+  content: '\f058'; /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+
+.target{
+  font-size:18px;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 1.5s ease;
+}
+
+.target:target{
+  opacity: 1;
+  transform: translateX(0);
+}
+input[type=checkbox]:checked + label {
+  color:red;
+  text-decoration: line-through;
+} /*This is the MDN spec for doing this*/
+
+#cbox3 {
+  color:blue;
+  text-decoration: line-through;
+}
+
+/* #cbox3:checked + label {
+  color:blue;
+  text-decoration: line-through;
+} */
+
+.cbox4 {
+  font-size: 5em;
+  color:red;
+  text-decoration: line-through;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+/* .cbox4:checked + label {
+  font-size: 5em;
+  color:red;
+  text-decoration: line-through;
+} */
+
+/* section article div input[type=checkbox]:checked + label {
+  color:orange;
+  text-decoration: line-through;
+} */   /* Super over selected!*/
+
+/* input[type=checkbox]:checked + label {
+  font-size: 3em;
+  color:green;
+  text-decoration: line-through;
+} */
+

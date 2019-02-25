@@ -1,0 +1,10 @@
+.pat{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 23px;
+  font-weight:500;
+  line-height: 30px;
+}
+.left {
+  position: relative; 
+  float: left;
+}
