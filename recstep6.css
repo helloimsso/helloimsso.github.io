@@ -1,0 +1,118 @@
+/*step*/
+.left {
+  position: relative;
+  top:-10px;
+  max-width: 400px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:22px;
+  font-weight:400;
+  color:black;
+  width:30%;
+  left:20%;
+
+}
+
+/*ing box*/
+.right{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:23px;
+  font-weight:400;
+  color:black;
+  margin-left:60%;
+  margin-top:-13%;
+  max-width: 400px;
+
+}
+
+/*recipe text*/
+.recipe{
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 45px;
+  font-weight:700;
+  line-height: 60px;
+  color:rgb(2, 31, 62);
+  top:-35px;
+  /*right:-300px;*/
+  left:40%;
+  position:relative;
+
+
+}
+
+.number{
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: bold;
+  font-size:75px;
+  color:salmon;
+  position:relative;
+  left:20%;
+  top:-20px;
+
+
+}
+
+/*ing box*/
+
+.container {
+  margin: 0px auto;
+  max-width: 700px;
+  position:relative;
+}
+
+input[type = "checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: grey;
+ 
+}
+
+
+
+/*navigation*/
+.boxhead a {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:20px;
+  color:gray;
+  position:relative;
+  top:-20px;
+  /*line-height:50px;*/
+
+}
+
+@media (max-width: 700px) {
+  .left,.right,.container,.number,.recipe {
+    font-size: 15px;
+    
+  }
+}
+
+
+/*navigation_bottom*/
+.pagination {
+  display: inline-block;
+  font-family: 'Bowlby One SC', cursive;
+  font-size:15px;
+  position:absolute;
+  /*width:100%;*/
+  top:600px;
+  left:400px;
+  margin:0 auto;
+
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color:rgb(2, 31, 62) ;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
