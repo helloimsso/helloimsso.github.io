@@ -19,7 +19,7 @@
   font-weight:400;
   color:black;
   margin-left:60%;
-  margin-top:-13%;
+  margin-top:-18%;
   max-width: 400px;
 
 }
@@ -46,8 +46,7 @@
   color:salmon;
   position:relative;
   left:20%;
-  top:-20px;
-
+  top:-20%;
 
 }
 
@@ -93,7 +92,6 @@ input[type = "checkbox"]:checked + label {
   font-family: 'Bowlby One SC', cursive;
   font-size:15px;
   position:absolute;
-  /*width:100%;*/
   top:600px;
   left:400px;
   margin:0 auto
@@ -114,5 +112,8 @@ input[type = "checkbox"]:checked + label {
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
 
 
