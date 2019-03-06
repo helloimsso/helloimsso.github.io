@@ -1,12 +1,3 @@
-/*.bars{*/
-    padding: 8px 16px;
-    float: center;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 5px;
-    text-align: center;
-}
 
 .bar1, .bar2, .bar4 :hover, {
     color: #000!important;
@@ -14,19 +5,22 @@
 }
 
 .bars a {
-  display: inline-block;
-  width: auto;
-  color: black;
-  padding: 13px 23px;
-  text-decoration: none;
-  position:relative;
-  left:285px;
-  float: center;
+  /*display: inline-block;*/
+    display: block;
+    min-width:100px;
+    margin: auto;
+    color: black;
+    padding: 13px 23px;
+    margin:0 auto;
+    width:10%;
+  /*position:relative;*/
+  /*left:285px;*/
   overflow: hidden;
   cursor: pointer;
   white-space: nowrap;
   border: 1px solid#1F618D!important;
   text-align: center!important;
+  text-decoration: none;
 }
 
 .bars a:hover:not(.active) {
@@ -41,11 +35,12 @@
 
 .bars {
   text-align: center;
-  border-bottom: 1px solid #1F618D;
+  max-width:200px;
+  border: 1px solid #1F618D;
+
 }
-.bars:last-child {
-  border-bottom: none;
-}
+
+
 
 /*mdkmkfmdkfmkdfmkdmfkdfkfkmfkdmfd*/
 
@@ -75,7 +70,7 @@ h3{
   text-decoration-skip: ink;
   color: #1C304A;
   font-family: 'Bowlby One SC', cursive;
-  font-size: 120px;
+  font-size: 10vw;
   font-weight:700;
   line-height: 8px;
   text-align: center;
@@ -95,3 +90,9 @@ h3{
   position:relative;
 }
 
+@media screen and (min-width: 600px) {
+  .ink {
+    float: none;
+    width: 200%;
+  }
+}
