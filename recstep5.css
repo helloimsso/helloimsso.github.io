@@ -92,14 +92,6 @@ input[type = "checkbox"]:checked + label {
 
 /*navigation_bottom*/
 .pagination {
- <!--  display: inline-block;
-  font-family: 'Bowlby One SC', cursive;
-  font-size:15px;
-  position:absolute;
-  /*width:100%;*/
-  top:600px;
-  left:400px;
-  margin:0 auto -->
   display: inline-block;
   font-family: 'Bowlby One SC', cursive;
   font-size:15px;
