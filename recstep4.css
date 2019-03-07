@@ -3,12 +3,14 @@
   position: relative;
   top:-10px;
   max-width: 400px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
   font-size:22px;
   font-weight:400;
   color:black;
-  width:30%;
+  width:50%;
   left:20%;
+  line-height:30px;
 
 }
 
@@ -47,6 +49,7 @@
   position:relative;
   left:20%;
   top:-20px;
+  width:30%;
 
 
 }
@@ -80,7 +83,7 @@ input[type = "checkbox"]:checked + label {
 }
 
 @media (max-width: 700px) {
-  .left,.right,.container,.number,.recipe {
+  .left,.right,.container,.pagination {
     font-size: 15px;
     
   }
@@ -89,21 +92,31 @@ input[type = "checkbox"]:checked + label {
 
 /*navigation_bottom*/
 .pagination {
-  display: inline-block;
+  /*display: inline-block;
   font-family: 'Bowlby One SC', cursive;
   font-size:15px;
   position:absolute;
   /*width:100%;*/
-  top:600px;
+  /*top:600px;
   left:400px;
-  margin:0 auto
+  margin:0 auto*/
+  display: inline-block;
+  font-family: 'Bowlby One SC', cursive;
+  font-size:15px;
+  position:absolute;
+  flex:center;
+  top:20%;
+  /*left:35%;*/
+  width:0%;
+  /*margin:50% 10% 0% 0%; */
+
 
 }
 
 .pagination a {
   color: black;
   float: left;
-  padding: 8px 16px;
+  padding: 6px 12px;
   text-decoration: none;
   transition: background-color .3s;
 }
