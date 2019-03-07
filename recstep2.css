@@ -97,9 +97,11 @@ input[type = "checkbox"]:checked + label {
   font-family: 'Bowlby One SC', cursive;
   font-size:15px;
   position:absolute;
-  /*top:600px;*/
-  /*left*/:400px;
-  margin:50% 10% 0% 0%; 
+  flex:center;
+  top:20%;
+  /*left:35%;*/
+  width:0%;
+  /*margin:50% 10% 0% 0%; */
 
 }
 
