@@ -8,7 +8,7 @@
   font-size:22px;
   font-weight:400;
   color:black;
-  width:50%;
+  width:80%;
   left:20%;
   line-height:30px;
 
@@ -42,10 +42,10 @@ font-family: 'Ubuntu', sans-serif;
   font-weight:700;
   line-height: 60px;
   color:rgb(2, 31, 62);
-  top:-35px;
+  top:85px;
   /*right:-300px;*/
   left:40%;
-  position:relative;
+  position:absolute;
 
 
 }

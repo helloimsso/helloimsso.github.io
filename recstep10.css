@@ -34,10 +34,10 @@
   font-weight:700;
   line-height: 60px;
   color:rgb(2, 31, 62);
-  top:-35px;
+  top:85px;
   /*right:-300px;*/
   left:40%;
-  position:relative;
+  position:absolute;
 
 
 }
@@ -85,7 +85,7 @@ input[type = "checkbox"]:checked + label {
 }
 
 @media (max-width: 700px) {
-  .left,.right,.container,.pagination{
+  .right,.container,.pagination{
     font-size: 15px;
     
   }

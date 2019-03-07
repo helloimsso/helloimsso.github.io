@@ -3,10 +3,10 @@
   position: relative;
   top:-10px;
   max-width: 400px;
-  /*font-family: 'Ubuntu', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
-  font-weight:400;
+  font-weight:600;
   font-size:22px;
+  font-weight:400;
   color:black;
   width:50%;
   left:20%;
@@ -20,14 +20,9 @@
   font-size:23px;
   font-weight:400;
   color:black;
-  /*margin-left:60%;
+  margin-left:60%;
   margin-top:-13%;
-  max-width: 400px;*/
-    position:absolute;
-  /*margin-left:70%;
-  margin-top:-40%;*/
-  width: 400px;
-  left:20%;
+  max-width: 400px;
 
 }
 
@@ -38,10 +33,10 @@
   font-weight:700;
   line-height: 60px;
   color:rgb(2, 31, 62);
-  top:85px;
+  top:-35px;
   /*right:-300px;*/
   left:40%;
-  position:absolute;
+  position:relative;
 
 
 }
@@ -97,15 +92,15 @@ input[type = "checkbox"]:checked + label {
 
 /*navigation_bottom*/
 .pagination {
-  /*display: inline-block;
+ <!--  display: inline-block;
   font-family: 'Bowlby One SC', cursive;
   font-size:15px;
   position:absolute;
   /*width:100%;*/
-  /*top:600px;
+  top:600px;
   left:400px;
-  margin:0 auto;*/
- display: inline-block;
+  margin:0 auto -->
+  display: inline-block;
   font-family: 'Bowlby One SC', cursive;
   font-size:15px;
   position:absolute;
