@@ -5,7 +5,7 @@
   max-width: 400px;
   /*font-family: 'Ubuntu', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
-  font-weight:400;
+  font-weight:600;
   font-size:22px;
   color:black;
   width:80%;
@@ -65,7 +65,6 @@
   color:salmon;
   position:relative;
   left:20%;
-  top:-20px;
   width:30%;
 
 
