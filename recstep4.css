@@ -5,7 +5,7 @@
   max-width: 400px;
   font-family: 'Open Sans', sans-serif;
   font-size:22px;
-  font-weight:400;
+  font-weight:600;
   color:black;
   width:80%;
   left:20%;
@@ -13,31 +13,7 @@
 
 }
 
-/*ing box*/
-.right{
-  position: absolute;
-  top: 200px;
-  right: 40px;
-  margin-right: 100px;
-  width: 300px;
-  height: 180px;
-  padding-top: 5%;
-  padding-left: 5%;
-  font-family: 'Ubuntu', sans-serif;
-  font-size:23px;
-  font-weight:400;
-  color:black;
- /* font-family: 'Ubuntu', sans-serif;
-  font-size:23px;
-  font-weight:400;
-  color:black;
-  width: 400px;
-  left:20%;*/
 
-}
-
-
- 
 /*recipe text*/
 .recipe{
   font-family: 'Bowlby One SC', cursive;

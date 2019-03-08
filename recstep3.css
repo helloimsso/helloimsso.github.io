@@ -4,7 +4,7 @@
   top:-10px;
   max-width: 400px;
   font-family: 'Open Sans', sans-serif;
-  font-weight:400;
+  font-weight:600;
   font-size:22px;
   color:black;
   width:80%;
@@ -23,10 +23,11 @@
   height: 180px;
   padding-top: 5%;
   padding-left: 5%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size:23px;
   font-weight:400;
   color:black;
+  line-height:30px;
   /*margin-left:70%;
   margin-top:-40%;*/
   /*width: 400px;*/
@@ -42,15 +43,14 @@
  
 }
 
-
   @media only screen and (max-width: 700px) {
     .right {
         position: relative;
-        margin-top: -200px;
+        margin-top: -210px;
         margin-left: 90px;
+        margin-bottom:80px; 
     }
   } 
-
 
 
 /*recipe text*/

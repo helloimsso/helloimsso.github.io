@@ -6,7 +6,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight:600;
   font-size:70px;
-  font-weight:400;
+  font-weight:600;
   color:black;
   width:80%;
   left:20%;
@@ -128,5 +128,48 @@ input[type = "checkbox"]:checked + label {
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.button:hover, {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
+.button a {
+  display: block;
+  min-width:200px;
+  /*margin: auto;*/
+  color: black;
+  padding: 30px 34px;
+  margin:0 auto;
+  /*margin-bottom:3%;*/
+  width:10%;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 1px solid#1F618D!important;
+  text-align: center!important;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 60px;
+  text-align: center;
+
+
+}
+
+.button a:hover:not(.active) {
+  background-color: #1F618D;
+  color: white;
+
+}
+
+/*.bars a.active {*/
+  background-color: salmon;
+  color: white;
+}
+
+
+
+
+
 
 
