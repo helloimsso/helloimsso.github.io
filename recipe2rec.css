@@ -69,16 +69,16 @@
 
 /*ing box*/
 
-/*.container {
+.container {
   margin: 10% 20% 10% 20%  ;
   width: 50%;
    left:40%;
-  /*position:relative;*/
-}*/
+  position:relative;}
+
 
 input[type = "checkbox"]:checked + label {
   text-decoration: line-through;
-  color: grey;
+  color: white;
  
 }
 
