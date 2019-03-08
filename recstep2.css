@@ -6,7 +6,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight:400;
   font-size:22px;
-  font-weight:400;
   color:black;
   width:80%;
   left:20%;
@@ -16,16 +15,38 @@
 
 /*ing box*/
 .right{
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  margin-right: 100px;
+  width: 300px;
+  height: 180px;
+  padding-top: 5%;
+  padding-left: 5%;
   font-family: 'Ubuntu', sans-serif;
   font-size:23px;
   font-weight:400;
   color:black;
+/*  font-family: 'Ubuntu', sans-serif;
+  font-size:23px;
+  font-weight:400;
+  color:black;
   position:absolute;
-  /*margin-left:70%;
-  margin-top:-40%;*/
-  width: 400px;
+  width: 50%;
   left:20%;
+  margin-bottom:5%;*/
 }
+
+
+  @media only screen and (max-width: 700px) {
+    .right {
+        position: relative;
+        margin-top: -200px;
+        margin-left: 90px;
+    }
+  } 
+
+
 
 /*recipe text*/
 .recipe{
@@ -83,12 +104,13 @@ input[type = "checkbox"]:checked + label {
 
 }
 
-@media (max-width: 100px) {
+@media (max-width: 700px) {
   .left,.right,.container,.pagination{
     font-size: 15px;
     
   }
 }
+
 
 
 /*navigation_bottom*/

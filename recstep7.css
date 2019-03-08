@@ -16,20 +16,30 @@
 
 /*ing box*/
 .right{
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  margin-right: 100px;
+  width: 300px;
+  height: 180px;
+  padding-top: 5%;
+  padding-left: 5%;
   font-family: 'Ubuntu', sans-serif;
   font-size:23px;
   font-weight:400;
   color:black;
-/*  margin-left:60%;
-  margin-top:-13%;
-  max-width: 400px;
-*/
-  position:absolute;
-  /*margin-left:70%;
-  margin-top:-40%;*/
-  width: 400px;
-  left:20%;
+
 }
+
+ @media only screen and (max-width: 700px) {
+    .right {
+        position: relative;
+        margin-top: -200px;
+        margin-left: 90px;
+    }
+  } 
+
+
 
 /*recipe text*/
 .recipe{
