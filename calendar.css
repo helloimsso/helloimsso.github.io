@@ -1,0 +1,21 @@
+body{
+	background-color: lightgrey;
+	font-size:25px;
+}
+
+
+
+@media screen and (min-width:600px) {
+   
+  .row {
+	display: flex;
+	justify-content: space-around;
+}
+
+}
+
+
+
+
+
+
