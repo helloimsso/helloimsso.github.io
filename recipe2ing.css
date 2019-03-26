@@ -46,6 +46,17 @@ body{
 
 
 
+@media (max-width: 700px) {
+  .container {
+    font-size: 19px;
+    margin-bottom: 200px;
+  } .pat{font-size: 22px;
+
+  } 
+}
+
+
+
 /*#cbox1 {*/
   color:blue;
   text-decoration: line-through;
