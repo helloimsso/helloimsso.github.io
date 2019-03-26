@@ -1,0 +1,119 @@
+body{
+	background:#D0ECE7  ;
+	color:black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	padding:30px;
+
+}
+
+h3{font-family: 'Ubuntu', sans-serif;
+	font-size: 50px;
+	font-weight:700;
+	line-height: 5px;
+	text-align: center;
+ 
+}
+
+#ink{
+-webkit-text-decoration: #AED6F1 underline;
+  text-decoration: #AED6F1 underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  color: #AED6F1;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 70px;
+  font-weight:700;
+  line-height: 8px;
+  text-align: center;
+}
+
+.deswrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.des{
+  font-family: 'Open Sans', sans-serif;
+	font-size: 13.5px;
+  text-align: cneter;
+  display:inline-block;
+  left:10px;
+  position:relative;
+  color:#D7BDE2   ;
+}
+
+ul.a {
+  list-style-type: square;
+  color:#D7BDE2;  
+}
+
+
+.pat{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 23px;
+	font-weight:500;
+	line-height: 30px;
+  color:#F7DC6F  ;
+}
+
+ol.a{
+  position: relative;
+ 
+}
+
+ol.b{
+  /*position:relative; left:200px; width: 600px;*/
+  
+  display:inline-block;
+  /*background-color:lightgray ;
+  opacity:0.2px;
+  padding: 20px;*/
+  text-align:left;
+  position: relative;
+  width: 700px;
+  color:#D7BDE2  ;
+  
+}
+
+.left {
+  position: relative; 
+  float: left;
+}
+
+.korean{
+  position: relative; 
+  float: left;
+  font-size:50px;
+  position:relative;
+  bottom:-500px;
+  left:-300px;
+}
+
+.right {
+  position: relative;
+  float: right;
+}
+
+.recipe{
+  font-family: 'Ubuntu', sans-serif;
+	font-size: 23px;
+	font-weight:500;
+  color:#F7DC6F  ;
+	/*line-height: 30px;*/
+
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #AED6F1;
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: bold;
+}

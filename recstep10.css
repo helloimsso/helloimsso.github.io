@@ -1,0 +1,174 @@
+/*step*/
+.left {
+  position: relative;
+  top:-10px;
+  max-width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  font-size:70px;
+  font-weight:600;
+  color:black;
+  width:80%;
+  left:20%;
+  line-height:30px;
+
+
+}
+
+/*ing box*/
+.right{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:23px;
+  font-weight:400;
+  color:black;
+  margin-left:60%;
+  margin-top:-13%;
+  max-width: 400px;
+
+}
+
+/*recipe text*/
+.recipe{
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 45px;
+  font-weight:700;
+  line-height: 60px;
+  color:rgb(2, 31, 62);
+  top:85px;
+  /*right:-300px;*/
+  left:40%;
+  position:absolute;
+
+
+}
+
+.number{
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: bold;
+  font-size:75px;
+  color:salmon;
+  position:relative;
+  left:20%;
+  width:30%;
+  letter-spacing:-10px;
+
+
+}
+
+/*ing box*/
+
+.container {
+  margin: 0px auto;
+  max-width: 700px;
+  position:relative;
+}
+
+input[type = "checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: grey;
+ 
+}
+
+
+
+/*navigation*/
+.boxhead a {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:20px;
+  color:gray;
+  position:relative;
+  top:-20px;
+  /*line-height:50px;*/
+
+}
+
+@media (max-width: 700px) {
+  .right,.container,.pagination{
+    font-size: 15px;
+    
+  }
+}
+
+
+/*navigation_bottom*/
+.pagination {
+ /* display: inline-block;
+  font-family: 'Bowlby One SC', cursive;
+  font-size:15px;
+  position:absolute;
+  /*width:100%;*/
+  /*top:600px;
+  left:400px;
+  margin:0 auto*/  
+  display: inline-block;
+  font-family: 'Bowlby One SC', cursive;
+  font-size:15px;
+  position:absolute;
+  flex:center;
+  top:20%;
+  /*left:35%;*/
+  width:0%;
+  /*margin:50% 10% 0% 0%; */
+
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color:rgb(2, 31, 62) ;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.button:hover, {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
+.button a {
+  display: block;
+  min-width:200px;
+  /*margin: auto;*/
+  color: black;
+  padding: 30px 34px;
+  margin:0 auto;
+  /*margin-bottom:3%;*/
+  width:10%;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 1px solid#1F618D!important;
+  text-align: center!important;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-size: 60px;
+  text-align: center;
+
+
+}
+
+.button a:hover:not(.active) {
+  background-color: #1F618D;
+  color: white;
+
+}
+
+/*.bars a.active {*/
+  background-color: salmon;
+  color: white;
+}
+
+
+
+
+
+
+
