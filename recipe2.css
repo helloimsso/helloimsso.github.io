@@ -1,18 +1,18 @@
 
-.bar1, .bar2, .bar4 :hover, {
+.bars:hover, {
     color: #000!important;
     background-color: #f1f1f1!important;
 }
 
 .bars a {
   /*display: inline-block;*/
-    display: block;
-    min-width:100px;
-    margin: auto;
-    color: black;
-    padding: 13px 23px;
-    margin:0 auto;
-    width:10%;
+  display: block;
+  min-width:100px;
+  margin: auto;
+  color: black;
+  padding: 13px 23px;
+  margin:0 auto;
+  width:10%;
   /*position:relative;*/
   /*left:285px;*/
   overflow: hidden;
@@ -21,7 +21,7 @@
   border: 1px solid#1F618D!important;
   text-align: center!important;
   text-decoration: none;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
 }
 
@@ -73,10 +73,11 @@ h3{
   text-decoration-skip: ink;
   color: #1C304A;
   font-family: 'Bowlby One SC', cursive;
-  font-size: 8vw;
+  font-size: 6em;
   font-weight:700;
   line-height: 8px;
   text-align: center;
+  margin: 0% auto;
 }
 
 .deswrap {
@@ -100,6 +101,10 @@ h3{
   /* For mobile phones: */
   [id*="ink"] {
     width: 100%;
+    font-size:5em;
+  }
+  #ink{font-size:3.5em;
+
   }
 }
 
