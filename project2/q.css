@@ -1,0 +1,13 @@
+.recipe{
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 150px;
+  font-weight:700;
+  line-height: 60px;
+  color:#ffebd3;
+  position: relative;
+  /*top:-30px;*/
+  left:150px;
+  float: center;
+  top:130px;
+  
+}

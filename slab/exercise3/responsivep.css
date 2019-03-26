@@ -1,0 +1,35 @@
+#lowercase-d{
+  background-color: black;
+  border-radius: 250px 50px 50px 250px;
+  -moz-border-radius: 250px 50px 50px 250px;
+  -webkit-border-radius: 250px 50px 50px 250px;
+  border: 40px solid black;
+  width:30vw;
+  height:30vh;
+  position:absolute;
+  top:230px;
+  left:70px;
+} 
+ 
+#rectangle {
+  width: 10vw;
+  height: 55vh;
+  background: black;
+  position:absolute;
+  top:55px;
+  left:400px;
+}
+
+/*#wrapper{*/
+  position: relative;
+  float:left;
+  width: 30%;
+  height: 10%;
+
+}
+
+
+/*@media(max-width:500px;){body{ background-color:grey; margin:20px;}*/
+
+
+

@@ -1,0 +1,63 @@
+.right {
+  position: relative;
+  top:-20px;
+  float: center;
+  margin: 0px auto;
+  max-width: 600px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:20px;
+  font-weight:400;
+  color:#C0392B ;
+text-decoration: line-through;
+}
+
+.recipe{
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 35px;
+  font-weight:700;
+  line-height: 60px;
+  color:rgb(44, 177, 80);
+  
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: #C0392B ;
+  font-family: 'Bowlby One SC', cursive;
+  font-weight: bold;
+}
+
+/*mdkmkfmdkfmkdfmkdmfkdfkfkmfkdmfd*/
+
+.container {
+  margin: 0px auto;
+  max-width: 700px;
+  position:relative;
+}
+
+input[type = "checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.boxhead a {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:20px;
+  color:gray;
+  position:relative;
+  top:-20px;
+  /*line-height:50px;*/
+
+}
+
+body{
+  background-color:#FFB300;
+}

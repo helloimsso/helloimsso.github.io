@@ -1,0 +1,39 @@
+body{text-align: left;
+	/*font-weight: 350;*/
+	font-family: 'Finger Paint', cursive;
+	font-style:italic;
+	font-weight:400;
+	font-size: 17px;
+	font-style: italic;
+	/*line-height: 20px;*/
+	text-transform: uppercase;
+	color: #F5B7B1  ;
+	background-color: #E5E7E9 ;
+	padding:30px;
+
+}
+p{text-align: right;
+	/*font-weight: 350;*/
+	font-family: 'Finger Paint', cursive;
+	font-style:italic;
+	font-weight:400;
+	font-size: 6vw;
+	font-style: italic;
+	/*line-height: 20px;*/
+	text-transform: uppercase;
+
+}
+
+h3{text-align: left;
+	/*font-weight: 350;*/
+	font-family: 'Ubuntu', sans-serif;
+	font-style:italic;
+	font-weight:400;
+	font-size: 15px;
+	font-style: italic;
+	/*line-height: 20px;*/
+	text-transform: uppercase;
+	color: #F5B7B1  ;
+	background-color: #E5E7E9 ;
+
+}

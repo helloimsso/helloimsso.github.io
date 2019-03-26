@@ -1,0 +1,97 @@
+/*.bars{*/
+    padding: 8px 16px;
+    float: center;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 5px;
+    text-align: center;
+}
+
+.bar1, .bar2, .bar4 :hover, {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
+.bars a {
+  display: inline-block;
+  width: auto;
+  color: #C0392B  ;
+  padding: 13px 23px;
+  text-decoration: none;
+  position:relative;
+  left:280px;
+  float: center;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 1px solid #C0392B !important;
+  text-align: center!important;
+}
+
+.bars a:hover:not(.active) {
+  background-color: gray;
+  color: white;
+}
+
+/*.bars a.active {*/
+  background-color: salmon;
+  color: white;
+}
+
+.bars {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+.bars:last-child {
+  border-bottom: none;
+}
+
+/*mdkmkfmdkfmkdfmkdmfkdfkfkmfkdmfd*/
+
+
+body{
+  background:rgb(234, 115, 88);
+  color: rgb(44, 177, 80);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  padding:30px;
+
+}
+
+h3{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  font-weight:700;
+  line-height: 5px;
+  text-align: center;
+ 
+}
+
+#ink{
+-webkit-text-decoration: rgb(44, 177, 80) underline;
+  text-decoration: rgb(44, 177, 80) underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+  color: rgb(44, 177, 80) ;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 120px;
+  font-weight:700;
+  line-height: 8px;
+  text-align: center;
+}
+
+.deswrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.des{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  text-align: center;
+  display:inline-block;
+  left:10px;
+  position:relative;
+}
+

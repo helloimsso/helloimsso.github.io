@@ -1,0 +1,41 @@
+
+
+#lowercase- {
+  width:400px;
+  height:500px;
+  /*border: 1px solid black;*/
+  
+}
+
+#lowercase-d{
+  background-color: black;
+  border-radius: 250px 50px 50px 250px;
+  -moz-border-radius: 250px 50px 50px 250px;
+  -webkit-border-radius: 250px 50px 50px 250px;
+  border: 40px solid black;
+  width:250px;
+  height:220px;
+  position:absolute;
+  top:230px;
+  left:80px;
+} 
+ 
+#rectangle {
+  width: 80px;
+  height: 505px;
+  background: black;
+  position:absolute;
+  /*border-radius:20px;*/
+  top:25px;
+  left:330px;
+}
+
+
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+  width:400px;
+}
