@@ -2,7 +2,7 @@ var temp;
 var humidity;
 var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
-$(document).ready(function()){
+$(document).ready(function(){
 
 	$.ajax({
 		url: 'http://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
