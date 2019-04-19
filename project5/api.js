@@ -1,7 +1,6 @@
 var temp;
 var humidity;
-var precipitation;
-
+var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
 $(document).ready(function()){
 
@@ -11,7 +10,8 @@ $(document).ready(function()){
 		success: function(results){
 			temp = results.main.temp;
 			humidity = results.main.humidity;
-			precipitation = results.main.precipitation;
+			weathertext = results.weather[0].main;
+
 
 			myWeatherInterpretation();
 		}
@@ -21,7 +21,7 @@ $(document).ready(function()){
 function myWeatherInterpretation(){
 	$('p').append('temp:' + temp);
 	$('p').append('humidity: ' + humidity);
-	$('p').append('precipitation: ' + precipitation);
+	$('p').append('weathertext: ' + weathertext);
 }
 
 
@@ -32,7 +32,8 @@ function myWeatherInterpretation(){
 		success: function(results){
 			temp2 = results.main.temp;
 			humidity2 = results.main.humidity;
-			precipitation2 = results.main.precipitation;
+			weathertext2 = results.weather[0].main;
+
 			
 			myWeatherInterpretation();
 		}
@@ -42,7 +43,7 @@ function myWeatherInterpretation(){
 function myWeatherInterpretation(){
 	$('p').append('temp:' + temp2);
 	$('p').append('humidity: ' + humidity2);
-	$('p').append('precipitation: ' + precipitation2);
+	$('p').append('weathertext: ' + weathertext);
 }
 
 
@@ -54,7 +55,8 @@ function myWeatherInterpretation(){
 		success: function(results){
 			temp3 = results.main.temp;
 			humidity3 = results.main.humidity;
-			precipitation3 = results.main.precipitation;
+			weathertext3 = results.weather[0].main;
+
 
 			myWeatherInterpretation();
 		}
@@ -64,5 +66,5 @@ function myWeatherInterpretation(){
 function myWeatherInterpretation(){
 	$('p').append('temp:' + temp3);
 	$('p').append('humidity: ' + humidity3);
-	$('p').append('precipitation: ' + precipitation3);
+	$('p').append('weathertext: ' + weathertext);
 }
