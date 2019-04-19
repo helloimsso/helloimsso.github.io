@@ -25,8 +25,6 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
         //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
         
-        
-        //JUST SEEING IF THE VALUES COME THROUGH
        
         $('p').append('temp: ' + temp);
         $('p').append('humidity: ' + humidity);
