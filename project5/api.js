@@ -43,7 +43,7 @@ function myWeatherInterpretation(){
 function myWeatherInterpretation(){
 	$('p').append('temp:' + temp2);
 	$('p').append('humidity: ' + humidity2);
-	$('p').append('weathertext: ' + weathertext);
+	$('p').append('weathertext: ' + weathertext2);
 }
 
 
@@ -66,5 +66,5 @@ function myWeatherInterpretation(){
 function myWeatherInterpretation(){
 	$('p').append('temp:' + temp3);
 	$('p').append('humidity: ' + humidity3);
-	$('p').append('weathertext: ' + weathertext);
+	$('p').append('weathertext: ' + weathertext3);
 }
