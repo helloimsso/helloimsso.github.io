@@ -1,5 +1,5 @@
 
-var temp; //Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. 
+var temp; 
 var humidity; //Humidity, %
 var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
