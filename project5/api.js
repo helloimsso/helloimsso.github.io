@@ -1,70 +1,39 @@
-var temp;
-var humidity;
+
+var temp; //Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. 
+var humidity; //Humidity, %
 var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+
 
 $(document).ready(function(){
 
-	$.ajax({
-		url: 'http://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
-		dataType: 'jsonp',
-		success: function(results){
-			temp = results.main.temp;
-			humidity = results.main.humidity;
-			weathertext = results.weather[0].main;
 
-
-			myWeatherInterpretation();
-		}
-	})
-}
-
-function myWeatherInterpretation(){
-	$('p').append('temp:' + temp);
-	$('p').append('humidity: ' + humidity);
-	$('p').append('weathertext: ' + weathertext);
-}
-
-
-///////////////////////part2
     $.ajax({
-		url: 'http://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
-		dataType: 'jsonp',
-		success: function(results){
-			temp2 = results.main.temp;
-			humidity2 = results.main.humidity;
-			weathertext2 = results.weather[0].main;
+        url: 'http://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            temp = results.main.temp;
+            humidity = results.main.humidity;
+        
 
-			
-			myWeatherInterpretation();
-		}
-	})
-}
+            myWeatherInterpretation();
 
-function myWeatherInterpretation(){
-	$('p').append('temp:' + temp2);
-	$('p').append('humidity: ' + humidity2);
-	$('p').append('weathertext: ' + weathertext2);
-}
+        }
+    });
+    
 
-
-
-///////////////////////part3
-    $.ajax({
-		url: 'http://api.openweathermap.org/data/2.5/weather?id=3186886&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
-		dataType: 'jsonp',
-		success: function(results){
-			temp3 = results.main.temp;
-			humidity3 = results.main.humidity;
-			weathertext3 = results.weather[0].main;
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+        
+        
+        //JUST SEEING IF THE VALUES COME THROUGH
+       
+        $('p').append('temp: ' + temp);
+        $('p').append('humidity: ' + humidity);
+        $('p').append('weathertext: ' + weathertext);
+        
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    }   
 
 
-			myWeatherInterpretation();
-		}
-	})
-}
-
-function myWeatherInterpretation(){
-	$('p').append('temp:' + temp3);
-	$('p').append('humidity: ' + humidity3);
-	$('p').append('weathertext: ' + weathertext3);
-}
+});
