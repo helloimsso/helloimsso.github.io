@@ -35,7 +35,9 @@ $(document).ready(function(){
 
 
 });
-//part2
+
+///part2
+$(document).ready(function(){
     $.ajax({
         url: 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
@@ -61,7 +63,10 @@ $(document).ready(function(){
         
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
-//part3
+});
+
+///part3
+$(document).ready(function(){
     $.ajax({
         url: 'https://api.openweathermap.org/data/2.5/weather?id=3186886&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
@@ -87,6 +92,10 @@ $(document).ready(function(){
         
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
+});
+
+
+
 
 
 
