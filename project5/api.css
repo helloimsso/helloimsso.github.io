@@ -4,6 +4,26 @@ body{
 	/*font-family: 'Corben', cursive;*/
 	font-size: 40px;
 	font-weight: 600;	
-	color: #456;
-	background-color: #6464;
+	color: #454;
+	background-color: lightsalmon;
+}
+
+#gate {
+	/*position:absolute;*/
+	/*margin-left:300px;*/
+	/*margin-top:300px;*/
+	cursor: pointer;
+  	margin-top: 200px;
+  	margin-left: 190px;
+  	
+}
+
+#egg {
+	/*position:absolute;*/
+	/*left:1000px;*/
+	/*top:300px;*/
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-right:-200px;
+    
 }

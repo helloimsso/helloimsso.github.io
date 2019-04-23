@@ -54,7 +54,15 @@ $(document).ready(function(){
     
 
     function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS  
+        var temp = new Date();
+    if(temp > 0 && temp <= 5)
+    {
+     greenBackground.alpha == 1
+     yellowBakckground.alpha == (temp/5)
+    }
+    else if(temp > 5 && temp <= 10)
+    }  
         
        
         $('p2').append('temp: ' + temp2);
@@ -93,8 +101,10 @@ $(document).ready(function(){
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
 });
+//////////////////////////////////////
 
 
+    
 
 
 
