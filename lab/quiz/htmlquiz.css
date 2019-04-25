@@ -1,16 +1,16 @@
 body{
-		background-color:salmon;
-		padding:50px;
-		font-family: 'futura', serif;
+	background-color:salmon;
+	padding:50px;
+	font-family: 'futura', serif;
 	font-size: 25px;
 	font color:salmon;
 	
 }
 
 p{
-		background-color:#333;
-		padding:50px;
-		font-family: 'futura', serif;
+	background-color:#333;
+	padding:50px;
+	font-family: 'futura', serif;
 	font-size: 13px;
 	font-color:salmon;
 }
