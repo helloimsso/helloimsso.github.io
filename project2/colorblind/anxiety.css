@@ -6,7 +6,7 @@
     display: block;
     outline: 5px;
     text-align: center;
-}
+/*}*/
 
 .bar1, .bar2, .bar4 :hover, {
     color: #000!important;
