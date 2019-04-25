@@ -23,14 +23,14 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metr
     var humidity = data.main.humidity;
     console.log('humidity',humidity);
 
-    if (humidity < 50) {
-        $('.humidity').css("opacity","30%");
+    if (humidity < 10) {
+        $('#eggyolk').css("opacity","20%");
     }
-    else if (humidity >= 50) {
-        $('.humidity').css("opacity","70%");
+    else if (humidity >= 30) {
+        $('#eggyolk').css("opacity","60%");
     }
-    else if (humidity >= 40 & humidity <= 50) {
-        $('.humidity').css("opacity","100%");
+    else if (humidity >= 50 & humidity <= 70) {
+        $('#eggyolk').css("opacity","100%");
     }
 
   });
