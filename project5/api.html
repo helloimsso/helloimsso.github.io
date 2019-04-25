@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>WEATHER</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="api.css"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="api.js"></script>  
+		<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Corben:400,700" rel="stylesheet">
+
+		<script>
+	
+
+   
+    </script>
+    </head>
+    
+    <body>
+	<div id="eggyolk" class="temperature"> </div>
+	<div id="coke" class="humidity"> </div>
+
+	<img src="api/q.png" width="500" height="300" id="gate" class="droppable">
+	<img src="api/q2.png" width="450" height="350" id="gate2" >
+	<img src="api/egg.png" width="120" height="100" id="egg">
+
+<!-- drag -->
+	<script type="text/javascript">
+    let currentDroppable = null;
+
+    egg.onmousedown = function(event) {
+
+      let shiftX = event.clientX - egg.getBoundingClientRect().left;
+      let shiftY = event.clientY - egg.getBoundingClientRect().top;
+
+      egg.style.position = 'absolute';
+      egg.style.zIndex = 100;
+      document.body.append(egg);
+
+      moveAt(event.pageX, event.pageY);
+
+      function moveAt(pageX, pageY) {
+        egg.style.left = pageX - shiftX + 'px';
+        egg.style.top = pageY - shiftY + 'px';
+      }
+
+      function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+
+        egg.hidden = true;
+        let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+        egg.hidden = false;
+
+        if (!elemBelow) return;
+
+        let droppableBelow = elemBelow.closest('.droppable');
+        if (currentDroppable != droppableBelow) {
+          if (currentDroppable) { // null when we were not over a droppable before this event
+            leaveDroppable(currentDroppable);
+          }
+          currentDroppable = droppableBelow;
+          if (currentDroppable) { // null if we're not coming over a droppable now
+            // (maybe just left the droppable)
+            enterDroppable(currentDroppable);
+          }
+        }
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+
+      egg.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+        egg.onmouseup = null;
+      };
+
+    };
+
+    function enterDroppable(elem) {
+      elem.style.background = 'lightyellow';
+    }
+
+    function leaveDroppable(elem) {
+      elem.style.background = '';
+    }
+
+    egg.ondragstart = function() {
+      return false;
+    };
+   
+  </script>
+
+    </body>
+<script src ="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+</html>

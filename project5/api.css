@@ -1,0 +1,62 @@
+body{
+	/*font-family: 'Concert One', cursive;*/
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Corben', cursive;*/
+	font-size: 40px;
+	font-weight: 600;	
+	color: #454;
+	background-color: lightblue;
+}
+
+#gate {
+	/*position:absolute;*/
+	/*margin-left:300px;*/
+	/*margin-top:300px;*/
+	cursor: pointer;
+  	margin-top: 200px;
+  	margin-left: 190px;
+  	
+}
+
+#gate2 {
+	/*position:absolute;*/
+	/*margin-left:300px;*/
+	/*margin-top:300px;*/
+	cursor: pointer;
+	position:absolute;
+  	margin-top: 80px;
+  	margin-left: 10px;
+  	
+}
+
+#eggyolk {
+	position:absolute;
+	top: 450px;
+  	left: 380px;
+	width: 200px;
+    height: 100px;
+    background: gold;
+    border-radius: 100px / 50px;
+}
+
+#egg {
+	/*position:absolute;*/
+	/*left:1000px;*/
+	/*top:300px;*/
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-right:-200px;
+    
+}
+
+#coke {
+	
+  	border-bottom: 100px solid brown;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 100px / 50px;
+    height: 100;
+    width: 10px;	
+}
+
+
