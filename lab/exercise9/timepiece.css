@@ -7,16 +7,57 @@ body{
 }
 
 #time{
-  font-size: 16vw;
+  font-size: 6vw;
   display: flex;
   justify-content: center;
-  color:gold;
+  color:#F1948A  ;
 }
 
 #contnet{
   font-size: 100px;
 }
 
-#orange {
-  background-color: orange;
+.button {
+  display: flex;
+  justify-content: center;
+  /*display: inline-block;*/
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: futura;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,1), 
+  0 0 30px rgba(255,255,255,1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+
+.smile {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  margin: -20px;
+  font-size: 100px;
+  color:gold;
+  animation: rot 3s infinite linear;
+}
+@keyframes rot {
+  from {
+    transform: rotate(0deg)
+               translate(-150px)
+               rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+               translate(-150px) 
+               rotate(-360deg);
+  }
+}
+
+

@@ -8,42 +8,27 @@
         <meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="api.css"> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!-- <script src="api.js"></script>   -->
+		<script src="api.js"></script>  
 		<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Corben:400,700" rel="stylesheet">
 
 		<script>
-    function gettingJSON(){
-        $(".group1").css("background-color","lightblue");
-        $(".group2").css("background-color","lightgreen");
-        //document.writeln("jquery loaded<br/>");
-        // a7b6f9d172b3942c95451e615475b7fc
-        
-        $.getJSON("https://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40",function(json){
-            //document.write(JSON.stringify(json));
-            $("p").html(json.name + "  " + json.main.temp)
-        });
-        
-        $.getJSON("https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40",function(json){
-            //document.write(JSON.stringify(json));
-            $("p").html(json.name + "  " + json.main.temp)
-        });
+	
 
-        $.getJSON("https://api.openweathermap.org/data/2.5/weather?id=3186886&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40",function(json){
-            //document.write(JSON.stringify(json));
-            $("p").html(json.name + "  " + json.main.temp)
-        });
-    }
    
     </script>
     </head>
     
     <body>
-	<img src="api/q.png" width="500" height="300" id="gate" class="droppable">
-	<img src="api/egg.png" width="120" height="100" id="egg">
-	
+	<div id="eggyolk" class="temperature"> </div>
+	<div id="coke" class="humidity"> </div>
 
+	<img src="api/q.png" width="500" height="300" id="gate" class="droppable">
+	<img src="api/q2.png" width="450" height="350" id="gate2" >
+	<img src="api/egg.png" width="120" height="100" id="egg">
+
+<!-- drag -->
 	<script type="text/javascript">
     let currentDroppable = null;
 
@@ -95,7 +80,7 @@
     };
 
     function enterDroppable(elem) {
-      elem.style.background = 'pink';
+      elem.style.background = 'lightyellow';
     }
 
     function leaveDroppable(elem) {
@@ -105,9 +90,7 @@
     egg.ondragstart = function() {
       return false;
     };
-    //////////////////////////////////
-
-    
+   
   </script>
 
     </body>

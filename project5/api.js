@@ -1,107 +1,42 @@
 
-var temp; 
-var humidity; //Humidity, %
-var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+$(function() {
+  console.log('weather');
 
+var url = 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
+  $.get(url, function(data) {
 
-$(document).ready(function(){
-
-
-    $.ajax({
-        url: 'https://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            temp = results.main.temp;
-            humidity = results.main.humidity;
-        
-
-            myWeatherInterpretation();
-
-        }
-    });
+    console.log(data);
     
+    var temperature = data.main.temp;
+    console.log('temperature',temperature);
 
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-        
-       
-        $('p').append('temp: ' + temp);
-        $('p').append('humidity: ' + humidity);
-        $('p').append('weathertext: ' + weathertext);
-        
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
-
-
-});
-
-///part2
-$(document).ready(function(){
-    $.ajax({
-        url: 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext2 = results.weather[0].main;
-            temp2 = results.main.temp;
-            humidity2 = results.main.humidity;
-        
-
-            myWeatherInterpretation();
-
-        }
-    });
-    
-
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS  
-        var temp = new Date();
-    if(temp > 0 && temp <= 5)
-    {
-     greenBackground.alpha == 1
-     yellowBakckground.alpha == (temp/5)
+    if (temperature < 20) {
+        $('#eggyolk').css("background-color","red");
     }
-    else if(temp > 5 && temp <= 10)
-    }  
-        
-       
-        $('p2').append('temp: ' + temp2);
-        $('p2').append('humidity: ' + humidity2);
-        $('p2').append('weathertext: ' + weathertext2);
-        
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
+    else if (temperature >= 20) {
+        $('#eggyolk').css("background-color","orange");
+    }
+    else if (temperature >= 10 & temperature <= 20) {
+        $('#eggyolk').css("background-color","pink");
+    }
+
+    var humidity = data.main.humidity;
+    console.log('humidity',humidity);
+
+    if (humidity < 50) {
+        $('.humidity').css("opacity","30%");
+    }
+    else if (humidity >= 50) {
+        $('.humidity').css("opacity","70%");
+    }
+    else if (humidity >= 40 & humidity <= 50) {
+        $('.humidity').css("opacity","100%");
+    }
+
+  });
+
+
 });
-
-///part3
-$(document).ready(function(){
-    $.ajax({
-        url: 'https://api.openweathermap.org/data/2.5/weather?id=3186886&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext3 = results.weather[0].main;
-            temp3 = results.main.temp;
-            humidity3 = results.main.humidity;
-        
-
-            myWeatherInterpretation();
-
-        }
-    });
-    
-
-    function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-        
-       
-        $('p3').append('temp: ' + temp3);
-        $('p3').append('humidity: ' + humidity3);
-        $('p3').append('weathertext: ' + weathertext3);
-        
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
-});
-//////////////////////////////////////
 
 
     
