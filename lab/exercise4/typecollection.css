@@ -1,0 +1,14 @@
+body{text-align: left;
+	/*font-weight: 350;*/
+	font-family: futura;
+	font-style:italic;
+	font-weight:400;
+	font-size: 17px;
+	font-style: italic;
+	/*line-height: 20px;*/
+	text-transform: uppercase;
+	color: #F5B7B1  ;
+	background-color: #E5E7E9 ;
+	padding:30px;
+
+}
