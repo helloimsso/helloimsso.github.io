@@ -123,8 +123,6 @@ input[type = "checkbox"]:checked + label {
   /*left:35%;*/
   width:0%;
   /*margin:50% 10% 0% 0%; */
-
-
 }
 
 .pagination a {
