@@ -23,8 +23,7 @@ function startTime() {
         $('.smile').css("color",'pink')
     } else if (m == 50) {
         $('.smile').css("color",'gold')
-    }   
-    else if (m == 0) {
+    } else if (m == 0) {
         $('.smile').css("color",'white')
     }          
 }
