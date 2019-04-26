@@ -1,4 +1,3 @@
-
 $(function() {
   console.log('weather');
 
@@ -10,7 +9,7 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metr
     var temperature = data.main.temp;
     console.log('temperature',temperature);
 
-    if (temperature < 20) {
+    if (temperature < 15) {
         $('#eggyolk').css("background-color","red");
     }
     else if (temperature >= 20) {
@@ -24,23 +23,45 @@ var url = 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metr
     console.log('humidity',humidity);
 
     if (humidity < 10) {
-        $('#eggyolk').css("opacity","20%");
+        $('#eggyolk').css("opacity","1");
     }
     else if (humidity >= 30) {
-        $('#eggyolk').css("opacity","60%");
+        $('#eggyolk').css("opacity","0.7");
     }
     else if (humidity >= 50 & humidity <= 70) {
-        $('#eggyolk').css("opacity","100%");
+        $('#eggyolk').css("opacity","0.5");
     }
 
   });
 
-
 });
 
+//////zagreb
 
     
 
 
 
 
+
+ 
+
+    
+
+
+
+
+
+ 
+
+    
+
+
+
+
+
+ 
+
+
+
+ 
