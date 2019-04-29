@@ -48,7 +48,7 @@ $(function() {
      var temperature = data.main.temp;
      console.log('temperature',temperature);
 
-     if (temperature < 20) {
+     if (temperature < 15) {
          $('#coke').css("background-color","red");
      }
      else if (temperature >= 20) {
@@ -88,26 +88,26 @@ $(function() {
      console.log('temperature',temperature);
 
      if (temperature < 20) {
-         $('#coke').css("background-color","red");
+         $('#pudding').css("background-color","red");
      }
      else if (temperature >= 20) {
-         $('#coke').css("background-color","orange");
+         $('#pudding').css("background-color","orange");
     }
     else if (temperature >= 10 & temperature <= 20) {
-       $('#coke').css("background-color","pink");
+       $('#pudding').css("background-color","pink");
    }
 
      var humidity = data.main.humidity;
    console.log('humidity',humidity);
 
    if (humidity < 10) {
-      $('#coke').css("opacity","1");
+      $('#pudding').css("opacity","1");
    }
    else if (humidity >= 30) {
-       $('#coke').css("opacity","0.7");
+       $('#pudding').css("opacity","0.7");
    }
  else if (humidity >= 50 & humidity <= 70) {
-     $('#coke').css("opacity","0.5");
+     $('#pudding').css("opacity","0.5");
     }
 
   });
