@@ -8,42 +8,36 @@ body {
 	background-color: lightblue;
 }
 
+#wrapper{
+	position:relative;
+}
+
 #gate {
-	/*position:absolute;*/
-	/*margin-left:300px;*/
-	/*margin-top:300px;*/
 	cursor: pointer;
-  	margin-top: 280px;
-  	margin-left: 190px;
-  	
+	position:absolute;
+  	top: 50%;
+  	left: 20%;	
 }
 
 #gate2 {
-	/*position:absolute;*/
-	/*margin-left:300px;*/
-	/*margin-top:300px;*/
 	cursor: pointer;
 	position:absolute;
-  	margin-top: 80px;
-  	margin-left: 10px;
-  	
+  	top: 10%;
+  	left: 50%;	
 }
 
 #gate3{
-	position:absolute;
-	margin-left:-600px;
-	margin-top:30px;
 	cursor: pointer;
 	position:absolute;
-  	
-  	
-
+	top:15%;
+	left:10%;
 }
 
 #eggyolk {
 	position:absolute;
-	top: 450px;
-  	left: 380px;
+	top: 65%;
+  	left: 35%;
+  	z-index: 10;
 	width: 200px;
     height: 100px;
     background: gold;
@@ -51,21 +45,16 @@ body {
 }
 
 #egg {
-	/*position:absolute;*/
-	/*left:1000px;*/
-	/*top:300px;*/
 	cursor: pointer;
 	margin-bottom: 20px;
 	margin-right:100px;
-    
+  
 }
 
 #coke {
 	position: absolute;
-  	margin-top: 25px;
-  	margin-left: 32px;
-	left:860px;
-	top:200px;
+  	top: 25%;
+  	left: 63.5%;
   	border-bottom: 100px solid #86381c;
     border-left: 75px solid #86381c;
     border-radius: 100px / 40px;
@@ -73,13 +62,13 @@ body {
 }
 
 #pudding {
+	position:absolute;
+	top:10%;
+	left:17%;
 	border-bottom: 150px solid hotpink;
     border-left: 100px solid hotpink;
     border-radius: 100px / 40px;
     width: 70px;
-	position:absolute;
-	top:60px;
-	left:200px;
     z-index: 10;
 }
 
