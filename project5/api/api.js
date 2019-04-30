@@ -5,18 +5,6 @@ $(function() {
 var url = 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
   $.get(url, function(data) {
 
-    console.log(data);
-    
-       function myWeatherInterpretation(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-    
-       
-        $('p').append('temp: ' + temp);
-        $('p').append('humidity: ' + humidity);
-        $('p').append('weathertext: ' + weathertext);
-        
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
 
     var temperature = data.main.temp;
     console.log('temperature',temperature);
