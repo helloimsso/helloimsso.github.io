@@ -6,33 +6,49 @@
         <title>WEATHER</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="api.css"> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="api.js"></script>  
-		<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Corben:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="api.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="api.js"></script>  
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Corben:400,700" rel="stylesheet">
 
-		<script>
-	
-
-   
+    <script>
     </script>
     </head>
     
     <body>
-	<div id="eggyolk" class="temperature" > </div>
-	<div id="coke"  class="temperature" > </div>
-  <div id="pudding" class="temperature" > </div>
-
 <!-- illustrations -->
-	<img src="q.png" width="500" height="300" id="gate" class="droppable">
-	<img src="q2.png" width="450" height="350" id="gate2" >
-  <img src="q3.png" width="350" height="220" id="gate3" >
-	<img src="egg.png" width="120" height="100" id="egg">
+<div id="wrapper">
+  <img src="q.png" width="500" height="300" id="gate" class="droppable">
+  <div id="eggyolk" class="temperature" > 
+  <div class="img__wrap">
+  <div class="img__description_layer">
+    <p class="img__description">KOREA</p>
+  </div>
+  </div></div>
+
+  <img src="q2.png" width="450" height="350" id="gate2">
+  <div id="coke"  class="temperature" > 
+  <div class="img__wrap2">
+  <div class="img__description_layer2">
+    <p class="img__description2">CROATIA</p>
+  </div>
+  </div></div>
+
+  <img src="q3.png" width="350" height="220" id="gate3">
+  <div id="pudding" class="temperature" > 
+  <div class="img__wrap3">
+  <div class="img__description_layer3">
+    <p class="img__description3">BRAZIL</p>
+  </div>
+  </div></div>
+</div>
+
+  <img src="egg.png" width="120" height="100" id="egg">
 
 <!-- drag -->
-	<script type="text/javascript">
+  <script type="text/javascript">
     let currentDroppable = null;
 
     egg.onmousedown = function(event) {
@@ -84,7 +100,7 @@
 
     function enterDroppable(elem) {
       elem.style.background = 'lightyellow';
-      $('#gate').append('<p id="gate">Hello!</p>');
+      // $('#gate').append('<p id="gate"> Hello!</p>');
     }
 
     function leaveDroppable(elem) {
