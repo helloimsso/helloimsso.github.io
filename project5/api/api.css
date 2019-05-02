@@ -43,6 +43,14 @@ body {
 }
 
 /* HOVER2 */
+.wrapper{
+position:relative;
+top: 25%;
+left: 50%;
+width: 55px;  
+
+}
+
 .img__wrap2 {
   position: relative;
   height: 20px;
@@ -154,8 +162,8 @@ body {
 
 #coke {
   position: absolute;
-  top: 25%;
-  left: 63.5%;
+  top: 5%;
+  left: 365%;
   border-bottom: 100px solid #86381c;
   border-left: 75px solid #86381c;
   border-radius: 100px / 40px;
