@@ -4,6 +4,7 @@ $(function() {
 
 var url = 'https://api.openweathermap.org/data/2.5/weather?id=3410315&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
   $.get(url, function(data) {
+    
 var temp; 
 var humidity; //Humidity, %
 var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
@@ -31,9 +32,9 @@ $(document).ready(function(){
         //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
         
        
-        $('p').append('temp: ' + temp);
-        $('p').append('humidity: ' + humidity);
-        $('p').append('weathertext: ' + weathertext);
+        $('p').append('temp: ' + temp +"</br>");
+        $('p').append('humidity: ' + humidity +"</br>");
+        $('p').append('weathertext: ' + weathertext +"</br>");
         
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
