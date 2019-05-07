@@ -1,4 +1,5 @@
 
 $( "html").click(function() {
-  $( "#toggle" ).toggle( "explode" );
+  $( "#toggle,#toggle2" ).toggle( "explode" );
 });
+

@@ -1,18 +1,23 @@
 
+$( "html").click(function() 
+{$( "#toggle,#toggle2,#toggle3").toggle( "explode" );
+});
+
+
+
 $(function() {
   console.log('weather');
 
-var url = 'https://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
-  $.get(url, function(data) {
+  var url = 'https://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40'
+   $.get(url, function(data) {
 
-    console.log(data);
+     console.log(data);
     
-     var temperature = data.main.temp;
-     console.log('temperature',temperature);
-
-var temp; 
-var humidity; //Humidity, %
-var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+    var temperature = data.main.temp;
+    console.log('temperature',temperature);
+    var temp; 
+    var humidity; //Humidity, %
+    var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
 
 $(document).ready(function(){
@@ -40,39 +45,46 @@ $(document).ready(function(){
         $('p').append('temp: ' + temp +"</br>");
         $('p').append('humidity: ' + humidity +"</br>");
         $('p').append('weathertext: ' + weathertext +"</br>");
+
+        console.log("temp: " + temp);
+
+        if (temp <15) {
+        $('#eggyolk').css("background-color","#5DADE2  ");
+    }
+    else if (temp >= 20) {
+        $('#eggyolk').css("background-color","orange");
+    }
+    else if (temp >= 30 ) {
+        $('#eggyolk').css("background-color","red");
+    }
+
+    if (humidity < 10) {
+      $('#eggyolk').css("opacity","1");
+   }
+   else if (humidity >= 30) {
+       $('#eggyolk').css("opacity","0.7");
+   }
+ else if (humidity >= 50 & humidity <= 70) {
+     $('#eggyolk').css("opacity","0.5");
+    }
+
+    if (weathertext = "clear") {
+      $('#eggyolk').css("width","200");
+   }
+   else if (weathertext = "hazy") {
+       $('#eggyolk').css("width","250");
+   }
+ else if (weathertext = "rain") {
+     $('#eggyolk').css("width","300");
+    }
+    console.log('humidity',humidity);
+    console.log('weathertext',weathertext);
         
-        //END OF MYWEATHERINTERPRETATION FUNCTION
+       
     }   
 
 
 });
-
-
-
-
-
-    if (temperature < 15) {
-        $('#eggyolk').css("background-color","red");
-    }
-    else if (temperature >= 20) {
-        $('#eggyolk').css("background-color","orange");
-    }
-    else if (temperature >= 10 & temperature <= 20) {
-        $('#eggyolk').css("background-color","pink");
-    }
-
-    var humidity = data.main.humidity;
-    console.log('humidity',humidity);
-
-    if (humidity < 10) {
-        $('#eggyolk').css("opacity","1");
-    }
-    else if (humidity >= 30) {
-        $('#eggyolk').css("opacity","0.7");
-    }
-    else if (humidity >= 50 & humidity <= 70) {
-        $('#eggyolk').css("opacity","0.5");
-    }
 
   });
 
@@ -87,12 +99,11 @@ $(function() {
 
      console.log(data);
     
-     var temperature = data.main.temp;
-     console.log('temperature',temperature);
-
-     var temp; 
-var humidity; //Humidity, %
-var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+    var temperature = data.main.temp;
+    console.log('temperature',temperature);
+    var temp; 
+    var humidity; //Humidity, %
+    var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
 
 $(document).ready(function(){
@@ -120,29 +131,20 @@ $(document).ready(function(){
         $('p1').append('temp: ' + temp +"</br>");
         $('p1').append('humidity: ' + humidity +"</br>");
         $('p1').append('weathertext: ' + weathertext +"</br>");
-        
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
 
+        console.log("temp: " + temp);
 
-});
-
-
-
-     if (temperature < 15) {
-         $('#coke').css("background-color","red");
-     }
-     else if (temperature >= 20) {
-         $('#coke').css("background-color","orange");
+        if (temp <15) {
+        $('#coke').css("border-color","#5DADE2  ");
     }
-    else if (temperature >= 10 & temperature <= 20) {
-       $('#coke').css("background-color","pink");
-   }
+    else if (temp >= 20) {
+        $('#coke').css("border-color","orange");
+    }
+    else if (temp >= 30 ) {
+        $('#coke').css("border-color","red");
+    }
 
-     var humidity = data.main.humidity;
-   console.log('humidity',humidity);
-
-   if (humidity < 10) {
+    if (humidity < 10) {
       $('#coke').css("opacity","1");
    }
    else if (humidity >= 30) {
@@ -152,9 +154,33 @@ $(document).ready(function(){
      $('#coke').css("opacity","0.5");
     }
 
+    if (weathertext = "rain") {
+      $('#coke').css("height","20");
+   }
+   else if (weathertext = "hazy") {
+       $('#coke').css("height","50");
+   }
+ else if (weathertext = "clear") {
+     $('#coke').css("height","90");
+    }
+    console.log('humidity',humidity);
+    console.log('weathertext',weathertext);
+        
+       
+    }   
+
+
+});
+
   });
 
 });
+    
+
+
+
+
+
     
 //////brasilia
 $(function() {
@@ -165,11 +191,11 @@ $(function() {
 
      console.log(data);
     
-     var temperature = data.main.temp;
-     console.log('temperature',temperature);
- var temp; 
-var humidity; //Humidity, %
-var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+    var temperature = data.main.temp;
+    console.log('temperature',temperature);
+    var temp; 
+    var humidity; //Humidity, %
+    var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
 
 $(document).ready(function(){
@@ -197,28 +223,21 @@ $(document).ready(function(){
         $('p2').append('temp: ' + temp +"</br>");
         $('p2').append('humidity: ' + humidity +"</br>");
         $('p2').append('weathertext: ' + weathertext +"</br>");
-        
-        //END OF MYWEATHERINTERPRETATION FUNCTION
-    }   
+
+        console.log("temp: " + temp);
 
 
-});
-
-
-     if (temperature < 20) {
-         $('#pudding').css("background-color","red");
-     }
-     else if (temperature >= 20) {
-         $('#pudding').css("background-color","orange");
+        if (temp <15) {
+        $('#pudding').css("border-color","#5DADE2  ");
     }
-    else if (temperature >= 10 & temperature <= 20) {
-       $('#pudding').css("background-color","pink");
-   }
+    else if (temp >= 20) {
+        $('#pudding').css("border-color","orange");
+    }
+    else if (temp >= 30 ) {
+        $('#pudding').css("border-color","red");
+    }
 
-     var humidity = data.main.humidity;
-   console.log('humidity',humidity);
-
-   if (humidity < 10) {
+    if (humidity < 10) {
       $('#pudding').css("opacity","1");
    }
    else if (humidity >= 30) {
@@ -227,6 +246,24 @@ $(document).ready(function(){
  else if (humidity >= 50 & humidity <= 70) {
      $('#pudding').css("opacity","0.5");
     }
+
+    if (weathertext = "rain") {
+      $('#pudding').css("width","70");
+   }
+   else if (weathertext = "hazy") {
+       $('#pudding').css("width","50");
+   }
+ else if (weathertext = "clear") {
+     $('#pudding').css("width","10");
+    }
+    console.log('humidity',humidity);
+    console.log('weathertext',weathertext);
+        
+       
+    }   
+
+
+});
 
   });
 
