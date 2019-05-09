@@ -17,7 +17,7 @@ $(function() {
     console.log('temperature',temperature);
     var temp; 
     var humidity; //Humidity, %
-    var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
+    var seoul_weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
 
 
 $(document).ready(function(){
@@ -27,7 +27,7 @@ $(document).ready(function(){
         url: 'https://api.openweathermap.org/data/2.5/weather?id=1835848&units=metric&APPID=7425438545a87f72f8e3b5ce7175bc40', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
-            weathertext = results.weather[0].main;
+            seoul_weathertext = results.weather[0].main;
             temp = results.main.temp;
             humidity = results.main.humidity;
         
@@ -44,9 +44,11 @@ $(document).ready(function(){
        
         $('p').append('temp: ' + temp +"</br>");
         $('p').append('humidity: ' + humidity +"</br>");
-        $('p').append('weathertext: ' + weathertext +"</br>");
+        $('p').append('weathertext: ' + seoul_weathertext +"</br>");
 
         console.log("temp: " + temp);
+        console.log("humidity: " + humidity);
+        console.log("weathertext: " + seoul_weathertext);
 
         if (temp <15) {
         $('#eggyolk').css("background-color","#5DADE2  ");
@@ -68,17 +70,20 @@ $(document).ready(function(){
      $('#eggyolk').css("opacity","0.5");
     }
 
-    if (weathertext = "clear") {
+    console.log('Seoul weathertext: ',seoul_weathertext);
+
+    if (seoul_weathertext = "rain") {
       $('#eggyolk').css("width","200");
    }
-   else if (weathertext = "hazy") {
+   else if (seoul_weathertext = "haze") {
        $('#eggyolk').css("width","250");
    }
- else if (weathertext = "rain") {
+ else if (seoul_weathertext = "clear") {
      $('#eggyolk').css("width","300");
     }
-    console.log('humidity',humidity);
-    console.log('weathertext',weathertext);
+    // console.log('humidity',humidity);
+
+    
         
        
     }   
@@ -133,6 +138,8 @@ $(document).ready(function(){
         $('p1').append('weathertext: ' + weathertext +"</br>");
 
         console.log("temp: " + temp);
+        console.log("humidity: " + humidity);
+        console.log("weathertext: " + weathertext);
 
         if (temp <15) {
         $('#coke').css("border-color","#5DADE2  ");
@@ -157,14 +164,14 @@ $(document).ready(function(){
     if (weathertext = "rain") {
       $('#coke').css("height","20");
    }
-   else if (weathertext = "hazy") {
+   else if (weathertext = "haze") {
        $('#coke').css("height","50");
    }
  else if (weathertext = "clear") {
      $('#coke').css("height","90");
     }
     console.log('humidity',humidity);
-    console.log('weathertext',weathertext);
+    // console.log('weathertext',weathertext);
         
        
     }   
@@ -225,6 +232,8 @@ $(document).ready(function(){
         $('p2').append('weathertext: ' + weathertext +"</br>");
 
         console.log("temp: " + temp);
+        console.log("humidity: " + humidity);
+        console.log("weathertext: " + weathertext);
 
 
         if (temp <15) {
@@ -250,14 +259,14 @@ $(document).ready(function(){
     if (weathertext = "rain") {
       $('#pudding').css("width","70");
    }
-   else if (weathertext = "hazy") {
+   else if (weathertext = "haze") {
        $('#pudding').css("width","50");
    }
  else if (weathertext = "clear") {
      $('#pudding').css("width","10");
     }
     console.log('humidity',humidity);
-    console.log('weathertext',weathertext);
+    // console.log('weathertext',weathertext);
         
        
     }   
