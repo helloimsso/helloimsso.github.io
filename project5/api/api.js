@@ -64,10 +64,10 @@ $(document).ready(function(){
       $('#eggyolk').css("opacity","1");
    }
    else if (humidity >= 30) {
-       $('#eggyolk').css("opacity","0.7");
+       $('#eggyolk').css("opacity","0.5");
    }
  else if (humidity >= 50 & humidity <= 70) {
-     $('#eggyolk').css("opacity","0.5");
+     $('#eggyolk').css("opacity","0.7");
     }
 
     console.log('Seoul weathertext: ',seoul_weathertext);
@@ -154,11 +154,11 @@ $(document).ready(function(){
     if (humidity < 10) {
       $('#coke').css("opacity","1");
    }
-   else if (humidity >= 30) {
-       $('#coke').css("opacity","0.7");
+   else if (humidity >= 50 & humidity <= 70) {
+       $('#coke').css("opacity","0.5");
    }
- else if (humidity >= 50 & humidity <= 70) {
-     $('#coke').css("opacity","0.5");
+ else if (humidity >= 30) {
+     $('#coke').css("opacity","0.7");
     }
 
     if (weathertext = "rain") {
@@ -239,21 +239,21 @@ $(document).ready(function(){
         if (temp <15) {
         $('#pudding').css("border-color","#5DADE2  ");
     }
-    else if (temp >= 20) {
-        $('#pudding').css("border-color","orange");
-    }
-    else if (temp >= 30 ) {
+    else if (temp >= 30) {
         $('#pudding').css("border-color","red");
+    }
+    else if (temp >= 20 ) {
+        $('#pudding').css("border-color","orange");
     }
 
     if (humidity < 10) {
       $('#pudding').css("opacity","1");
    }
    else if (humidity >= 30) {
-       $('#pudding').css("opacity","0.7");
+       $('#pudding').css("opacity","0.5");
    }
  else if (humidity >= 50 & humidity <= 70) {
-     $('#pudding').css("opacity","0.5");
+     $('#pudding').css("opacity","0.7");
     }
 
     if (weathertext = "rain") {
